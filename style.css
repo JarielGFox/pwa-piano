@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background: linear-gradient(#0f0f77 5%, #3535EC); /*Percentuale indica la predominanza di un colore rispetto all'altro*/
+    background-attachment: fixed; /* Il background non sarà scrollabile */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pianopanel { 
+    height: 100px;
+    background-color: darkorange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-image: url(img/panel-reflex.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.gen {
+    width: 100px;
+}
+
+.sunset {
+    width: 80px;
+}
+
+.piano-keys {
+    height: 190px;
+    background-color: black;
+    display: flex;
+    border-radius: 0 0 10px 10px;
+}
+
+.key {
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.kwhite {
+    height: 100%;
+    width: 60px;
+    background-color: whitesmoke;    
+    border: black 2px solid;
+    border-bottom: 5px solid gray;
+    border-radius: 0 0 8px 8px;
+}
+
+.kblack {
+    height: 60%;
+    width: 40px;
+    background: linear-gradient(#737373 10%, #0d0d0d);  
+    border: black 5px solid;
+    border-radius: 0 0 8px 8px;
+    margin-left: -20px;
+    margin-right: -20px;
+    z-index: 2;
+}
+
+.kwhite:active {
+    background-color: gray;
+}
+
+.kblack:active {
+    background: #0f0f77;
+}
