@@ -4,6 +4,12 @@
     padding: 0; 
 }
 
+html {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background: linear-gradient(#0f0f77 5%, #3535EC); /*Percentuale indica la predominanza di un colore rispetto all'altro*/
     background-attachment: fixed; /* Il background non sarà scrollabile */
@@ -19,10 +25,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 10px;
     background-image: url(img/panel-reflex.png);
     background-repeat: no-repeat;
     background-size: contain;
+    border-top: 4px double orangered;
+    border-left: 4px double orangered;
+    border-right: 4px double orangered;
+    border-bottom: 8px solid orangered;
+    border-radius: 5px 5px 0 0;  
     position: relative;
 }
 
@@ -50,7 +61,7 @@ body {
     height: 100%;
     width: 60px;
     background-color: whitesmoke;    
-    border: black 2px solid;
+    border: blueviolet 2px solid;
     border-bottom: 5px solid gray;
     border-radius: 0 0 8px 8px;
 }
@@ -59,17 +70,17 @@ body {
     height: 60%;
     width: 40px;
     background: linear-gradient(#737373 10%, #0d0d0d);  
-    border: black 5px solid;
+    border: darkslateblue 5px solid;
     border-radius: 0 0 8px 8px;
-    margin-left: -20px;
+    margin-left: -20px; /* Se vogliamo i tasti accavallati */
     margin-right: -20px;
-    z-index: 2;
+    z-index: 2; /* Permette di spostare la posizione di un elemento */
 }
 
 .kwhite:active {
-    background-color: gray;
+    background-color: lightslategrey;
 }
 
 .kblack:active {
-    background: #0f0f77;
+    background: darkslateblue;
 }
