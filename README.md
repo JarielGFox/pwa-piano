@@ -1,16 +1,10 @@
 - Synth Piano source code <br>
 
-<br>
-
 - Idea:
     > Boolean Coding Week
     
-<br>
-    
 - Sviluppatore:
-    > Giovanni Crudele
-       
-<br>
+    > Giovanni Crudele       
 
 - Linguaggi usati:
     >   JS ECMA 2020 <br>
